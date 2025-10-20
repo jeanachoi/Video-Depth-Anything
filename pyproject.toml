@@ -49,7 +49,8 @@ Repository = "https://github.com/jeanac/Video-Depth-Anything"
 "Original Repository" = "https://github.com/DepthAnything/Video-Depth-Anything"
 
 [tool.setuptools]
-packages = ["video_depth_anything", "utils"]
+# Use find to automatically discover all subpackages
+packages = {find = {}}
 include-package-data = true
 
 [tool.setuptools.package-data]
